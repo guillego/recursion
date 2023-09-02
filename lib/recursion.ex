@@ -3,16 +3,9 @@ defmodule Recursion do
   Documentation for `Recursion`.
   """
 
-  @doc """
-  Hello world.
 
-  ## Examples
-
-      iex> Recursion.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def generate_ornate_noun do
+    Recursion.RTN.OrnateNoun.generate()
   end
+
 end
