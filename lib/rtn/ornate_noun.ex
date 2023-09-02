@@ -57,11 +57,11 @@ defmodule Recursion.RTN.OrnateNoun do
     compose_structure([next_particle | current_stack])
   end
 
+  @doc """
+  We only use 'the' and 'a' and substitute at the end based on the next word
+  """
   defp article do
-    case :rand.uniform(2) do
-      1 -> "the"
-      _ -> "a"
-    end
+    Random.weighted_choice([{"the", 50}, {"a", 50}])
   end
 
   defp word_from_atom(:article), do: article()
