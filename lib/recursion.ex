@@ -3,9 +3,11 @@ defmodule Recursion do
   Documentation for `Recursion`.
   """
 
-
   def generate_ornate_noun do
     Recursion.RTN.OrnateNoun.generate()
   end
 
+  def generate_fancy_noun do
+    Recursion.RTN.FancyNoun.generate()
+  end
 end

@@ -33,7 +33,6 @@ defmodule Recursion.RTN.OrnateNoun do
     |> Enum.join(" ")
   end
 
-
   @doc """
   Continues deciding the structure of the ornate noun based on the current stack.
 
