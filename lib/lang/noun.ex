@@ -145,7 +145,6 @@ defmodule Recursion.Lang.Noun do
     "dirge",
     "desolation",
     "decay",
-    "suffering",
     "redemption"
   ]
 

@@ -22,7 +22,7 @@ iex(1)> Recursion.generate_ornate_noun
 iex(2)> Recursion.generate_ornate_noun
 "a silly cockamamie peculiar garden"
 iex(3)> Recursion.generate_ornate_noun
-"a lunatic suffering"
+"a lunatic silence"
 iex(4)> Recursion.generate_ornate_noun
 "zany nutty oddball knife"
 iex(5)> Recursion.generate_ornate_noun
