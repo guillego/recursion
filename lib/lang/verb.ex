@@ -1,0 +1,57 @@
+defmodule Recursion.Lang.Verb do
+  @words [
+    "ambled",
+    "brooded",
+    "climbed",
+    "darted",
+    "echoed",
+    "faded",
+    "glistened",
+    "howled",
+    "ignited",
+    "jolted",
+    "kicked",
+    "lurked",
+    "murmured",
+    "navigated",
+    "observed",
+    "plunged",
+    "quivered",
+    "rumbled",
+    "slinked",
+    "throbbed",
+    "uttered",
+    "wandered",
+    "yawned",
+    "beckoned",
+    "cowered",
+    "drifted",
+    "entangled",
+    "flickered",
+    "glinted",
+    "hunched",
+    "intertwined",
+    "juddered",
+    "lurched",
+    "muttered",
+    "nuzzled",
+    "pierced",
+    "quivered",
+    "rustled",
+    "slithered",
+    "thudded",
+    "vanished",
+    "whispered",
+    "yearned",
+    "bellowed",
+    "crackled",
+    "drenched",
+    "entwined",
+    "froze"
+  ]
+
+  def get do
+    @words
+    |> Enum.random()
+  end
+end
