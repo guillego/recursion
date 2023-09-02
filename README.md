@@ -1,21 +1,32 @@
 # Recursion
 
-**TODO: Add description**
+Reading Gödel, Escher, Bach I enjoyed the recursive dialogue "Little Harmonic Labyrinth" and the chapter that followed on recursion.
 
-## Installation
+So I decided to implement my own RTN to descrive the Ornate Noun and the Fancy Noun.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `recursion` to your list of dependencies in `mix.exs`:
 
-```elixir
-def deps do
-  [
-    {:recursion, "~> 0.1.0"}
-  ]
-end
+## To run
+Ensure you have Erlang/Elixir installed
+
+```
+$ iex -S mix
+
+iex> Recursion.generate_ornate_noun
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/recursion>.
+## Examples
 
+```
+iex(1)> Recursion.generate_ornate_noun
+"a funky crazy whimsical ninny"
+iex(2)> Recursion.generate_ornate_noun
+"a silly cockamamie peculiar garden"
+iex(3)> Recursion.generate_ornate_noun
+"a lunatic suffering"
+iex(4)> Recursion.generate_ornate_noun
+"zany nutty oddball knife"
+iex(5)> Recursion.generate_ornate_noun
+"unperturbed wharf"
+iex(6)> Recursion.generate_ornate_noun
+"the mysterious snotty enigmatic freaky surreal quirky echo"
+```
