@@ -27,7 +27,7 @@ defmodule Recursion.RTN.OrnateNoun do
   """
   def generate do
     [Random.weighted_choice(@initial_choices)]
-    |> decide_structure()
+    |> compose_structure()
     |> Enum.map(&word_from_atom/1)
     |> adjust_for_an()
     |> Enum.join(" ")
@@ -40,21 +40,21 @@ defmodule Recursion.RTN.OrnateNoun do
   Returns a list of atoms representing the chosen structure.
   """
 
-  defp decide_structure([:noun | _] = stack) do
+  defp compose_structure([:noun | _] = stack) do
     Enum.reverse(stack)
   end
 
-  defp decide_structure([:adjective | rest]) do
+  defp compose_structure([:adjective | rest]) do
     decide_if_next_adjective([:adjective | rest], @adjective_after_adjective_weight)
   end
 
-  defp decide_structure([:article | rest]) do
+  defp compose_structure([:article | rest]) do
     decide_if_next_adjective([:article | rest], @adjective_after_article_weight)
   end
 
   defp decide_if_next_adjective(current_stack, weight) do
     next_particle = if :rand.uniform(100) <= weight, do: :adjective, else: :noun
-    decide_structure([next_particle | current_stack])
+    compose_structure([next_particle | current_stack])
   end
 
   defp article do
