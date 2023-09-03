@@ -43,7 +43,6 @@ defmodule Recursion.Lang.Preposition do
     "past",
     "regarding",
     "round",
-    "since",
     "through",
     "to",
     "toward",

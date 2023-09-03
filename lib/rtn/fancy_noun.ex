@@ -5,9 +5,6 @@ defmodule Recursion.RTN.FancyNoun do
   alias Recursion.Random
   alias Recursion.RTN.OrnateNoun
 
-  @adjective_after_adjective_weight 50
-  @adjective_after_article_weight 70
-
   @initial_choices [
     {:end, 40},
     {:relative_pronoun, 20},
@@ -31,6 +28,7 @@ defmodule Recursion.RTN.FancyNoun do
     # [:ornate_noun]
     [Random.weighted_choice(@initial_choices), :ornate_noun]
     |> compose_structure()
+    # |> print_and_pass_through()
     |> Enum.map(&word_from_atom/1)
     |> Enum.join(" ")
   end
@@ -70,4 +68,9 @@ defmodule Recursion.RTN.FancyNoun do
   defp word_from_atom(:relative_pronoun), do: RelativePronoun.get()
   defp word_from_atom(:ornate_noun), do: OrnateNoun.generate()
   defp word_from_atom(:fancy_noun), do: generate()
+
+  def print_and_pass_through(arg) do
+    IO.inspect(arg)
+    arg
+  end
 end

@@ -3,7 +3,7 @@ defmodule Recursion.RTN.OrnateNoun do
   alias Recursion.Lang.Noun
   alias Recursion.Random
 
-  @adjective_after_adjective_weight 50
+  @adjective_after_adjective_weight 30
   @adjective_after_article_weight 70
 
   @initial_choices [
