@@ -2,7 +2,7 @@
 
 Reading Gödel, Escher, Bach I enjoyed the recursive dialogue "Little Harmonic Labyrinth" and the chapter that followed on recursion.
 
-So I decided to implement my own RTN to descrive the Ornate Noun and the Fancy Noun.
+So I decided to implement my own RTN to describe the Ornate Noun and the Fancy Noun.
 
 
 ## To run
